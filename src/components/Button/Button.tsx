@@ -2,7 +2,11 @@ import { Emoji } from "../../utils/types"
 
 import { Container } from "./Button.styles"
 
-function Button({ value }: any) {
+interface Props {
+  value: string
+}
+
+function Button({ value }: Props) {
   const checkValue = (event: any) => {
     const value = event.target.firstChild
 
